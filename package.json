@@ -1,0 +1,23 @@
+{
+  "name": "tictactoe-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnridwn/tictactoe-cli.git"
+  },
+  "author": "Den Ridwan Saputra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnridwn/tictactoe-cli/issues"
+  },
+  "homepage": "https://github.com/dnridwn/tictactoe-cli#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
