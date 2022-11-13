@@ -38,6 +38,11 @@ function startGame() {
         } while (showPromptPosition)
 
         ticTacToe.printBoard()
+
+        if (!ticTacToe.getWinner() && ticTacToe.isAllBoxesFilled()) {
+            ticTacToe.reset();
+            console.log('NO WINNER! BOARD RESETED')
+        }
         
         turn = turn == playerOneName ? playerTwoName : playerOneName
 
