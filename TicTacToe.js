@@ -29,7 +29,7 @@ export default class TicTacToe {
         return (this.__players.find(player => player.name == playerName)?.symbol) || null
     }
     
-    reset() {
+    resetBoard() {
         this.__boxFilled = 0
         this.__board = [
             [null, null, null],
@@ -80,7 +80,7 @@ export default class TicTacToe {
         }
     }
 
-    isAllBoxesFilled() {
+    areAllBoxesFilled() {
         return this.__boxFilled == this.__totalBoxes
     }
 

@@ -39,8 +39,8 @@ function startGame() {
 
         ticTacToe.printBoard()
 
-        if (!ticTacToe.getWinner() && ticTacToe.isAllBoxesFilled()) {
-            ticTacToe.reset();
+        if (!ticTacToe.getWinner() && ticTacToe.areAllBoxesFilled()) {
+            ticTacToe.resetBoard();
             console.log('NO WINNER! BOARD RESETED')
         }
         
