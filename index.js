@@ -1,9 +1,8 @@
 import TicTacToe from './TicTacToe.js'
 import PromptSync from 'prompt-sync'
 
-const prompt = new PromptSync
-
 function startGame() {
+    const prompt = new PromptSync
     const playerOneName = prompt('Name for Player 1: ')
     const playerTwoName = prompt('Name for Player 2: ')
 
