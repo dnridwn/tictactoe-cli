@@ -24,6 +24,8 @@ function startGame() {
     do {
         console.log(`\nTURN: ${turn}`)
 
+        ticTacToe.printBoard()
+
         let showPromptPosition = false;
         let x = ''
         let y = ''
@@ -37,8 +39,6 @@ function startGame() {
 
         } while (showPromptPosition)
 
-        ticTacToe.printBoard()
-
         if (!ticTacToe.getWinner() && ticTacToe.areAllBoxesFilled()) {
             ticTacToe.resetBoard();
             console.log('NO WINNER! BOARD RESETED')
@@ -48,6 +48,7 @@ function startGame() {
 
     } while(!ticTacToe.getWinner())
 
+    ticTacToe.printBoard()
     console.log("\nWINNER: ", ticTacToe.getWinner())
 }
 
